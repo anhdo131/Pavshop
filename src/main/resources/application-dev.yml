@@ -1,0 +1,21 @@
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/view/
+            suffix: .jsp
+datasource:
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    url: "jdbc:mysql://localhost:3306/pavshop"
+    username: root
+    password: 13012001
+jpa:
+    hibernate:
+        ddl-auto: update
+    properties:
+        hibernate:
+            dialect: org.hibernate.dialect.MySQL8Dialect
+            hibernate.connection.provider_disables_autocommit: true
+            hibernate.temp.use_jdbc_metadata_defaults: false
+
+pavshop-global-config:
+    pathUploadImage: ./upload/image/product
